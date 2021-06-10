@@ -1,0 +1,22 @@
+:root {
+    --accent-color: #33cc33
+}
+#index_pic{
+    float: right;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: auto;
+    margin-right: 5%;
+    height: 80%;
+}
+#index_name{
+    border-radius: 10px;
+    background-color: var(--accent-color);
+}
+#index_footer{
+    border-radius: 10px;
+    background-color: var(--accent-color);
+}
+body{
+    max-width: 700px;
+}
