@@ -2,3 +2,37 @@
     max-width: 300px;
     width: 100%;
 }
+
+h1, h2, h3, h4, h5, h6, p, li{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: grey;
+}
+
+#content{
+    background-color: rgb(214, 214, 214);
+    width: 65%;
+    min-width: 500px;
+    margin: auto auto;
+    padding: 20px;
+}
+
+#menu{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#menu_logo{
+    width: 50px;
+    justify-self: center;
+}
+
+.menu_item{
+    justify-self: center;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    width: 90%;
+}
