@@ -1,0 +1,99 @@
+html{
+    width: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, li{
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: rgb(137, 146, 151);
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin:0;
+}
+#logo{
+    width: 80px;
+    height: auto;
+}
+
+.navigation{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(163, 174, 180);
+    padding: 7px;
+    margin: 0;
+    width: 100%;
+}
+.navigation a{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+.navigation li{
+    padding: 4px;
+}
+.navigation li:hover{
+    background-color: rgb(137, 146, 151);
+}
+.navigation li:first-child{
+    display: none;
+}
+
+
+
+body{
+    position: relative;
+    background-color: skyblue;
+    margin: 0px;
+    width: 100%;
+}
+
+#content{
+    background-color: rgb(238, 249, 255);
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+}
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(40, 40, 41);
+    color: white;
+    text-align: center;
+}
+
+@media only screen and (max-width: 32.5em){
+    #content{
+        background-color: rgb(238, 249, 255);
+        width: 100%;
+    }
+    .navigation li:first-child{
+        display: block;
+    }
+    .navigation a{
+        width: 100%;
+    }
+    .navigation li{
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .expanded{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .expanded li{
+        display: block;
+    }
+}
