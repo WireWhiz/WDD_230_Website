@@ -1,6 +1,7 @@
 html{
     width: 100%;
-    margin: 0;
+    height: 100%;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, p, li{
@@ -53,6 +54,7 @@ body{
     background-color: skyblue;
     margin: 0px;
     width: 100%;
+    padding-bottom: 30px;
 }
 
 #content{
@@ -61,7 +63,7 @@ body{
     margin: auto;
     padding: 20px;
 }
-footer{
+#footer{
     position: absolute;
     left: 0;
     right: 0;
