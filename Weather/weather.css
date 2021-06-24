@@ -10,11 +10,14 @@ h1, h2, h3, h4, h5, h6, p, li{
 
 header{
     background-color: rgb(137, 146, 151);
-    padding: 5px 0;
+    padding: 5px;
+    padding-left: 20%;
+    padding-right: 20%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    width: 60%;
+
     margin:0;
 }
 #logo{
@@ -23,37 +26,41 @@ header{
 }
 
 .navigation{
+    position: block;
+    width: 60%;
+    padding: 7px;
+    padding-left: 20%;
+    padding-right: 20%;
     display: flex;
+    justify-content: space-between;
     list-style-type: none;
     align-items: center;
-    justify-content: center;
     background-color: rgb(163, 174, 180);
-    padding: 7px;
     margin: 0;
-    width: 100%;
 }
 .navigation a{
     text-decoration: none;
     color: black;
-    padding: 4px;
 }
-.navigation li{
-    padding: 4px;
-}
+
 .navigation li:hover{
     background-color: rgb(137, 146, 151);
 }
-.navigation li:first-child{
+.menu_button{
     display: none;
+    text-align: center;
+    text-size-adjust: 2;
+    width: 20%;
+    text-decoration: none;
+    color: black;
 }
-
-
 
 body{
     position: relative;
     background-color: skyblue;
     margin: 0px;
     width: 100%;
+    height: auto;
     padding-bottom: 30px;
 }
 
@@ -63,6 +70,37 @@ body{
     margin: auto;
     padding: 20px;
 }
+
+.summary_image{
+    position:relative;
+}
+.summary_image img{
+    width: 100%;
+}
+
+.summary{
+    background-color: rgb(238, 249, 255);
+    border-color: rgb(137, 146, 151);
+    border-width: 2px;
+    border: solid;
+    position:absolute;
+    left: 10%;
+    top: 10%;
+    padding: 5px;
+}
+
+.fdf_icons{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(137, 146, 151);
+    padding: 5px;
+}
+
+
+.featured_article img{
+    width: 100%;
+}
+
 #footer{
     position: absolute;
     left: 0;
@@ -73,12 +111,29 @@ body{
     text-align: center;
 }
 
-@media only screen and (max-width: 32.5em){
+.banner{
+    width: 100%;
+    background-color: rgb(255, 255, 157);
+    margin:0;
+    padding: .5em;
+}
+.banner p{
+    margin: 0;
+}
+.featured_image_mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 820px){
+    header{
+        padding: 7px;
+        width: 100%;
+    }
     #content{
         background-color: rgb(238, 249, 255);
         width: 100%;
     }
-    .navigation li:first-child{
+    .menu_button{
         display: block;
     }
     .navigation a{
@@ -98,4 +153,31 @@ body{
     .expanded li{
         display: block;
     }
+    .summary_image{
+        display:block;
+    }
+    .summary{
+        border:none;
+        position:static;
+    }
+    .fdf_icons{
+        display: none;
+    }
+    .featured_image{
+        display:none;
+    }
+    .featured_image_mobile{
+        display: block;
+    }
+}
+
+
+.hidden{
+    display: none;
+}
+.underline{
+    text-decoration: underline;
+}
+.navigation .underline{
+    text-decoration: underline;
 }
