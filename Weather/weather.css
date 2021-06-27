@@ -87,6 +87,10 @@ body{
     left: 10%;
     top: 10%;
     padding: 5px;
+    opacity: .8;
+}
+.summary p{
+    margin: .2em;
 }
 
 .fdf_icons{
@@ -159,6 +163,7 @@ body{
     .summary{
         border:none;
         position:static;
+        opacity: 1;
     }
     .fdf_icons{
         display: none;
