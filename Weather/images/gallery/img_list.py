@@ -17,5 +17,7 @@ for image in images:
 
 file = open("weather/images/gallery/img_list.txt", mode="w")
 for image in images:
-    file.write(image + "\n")
+    file.write(image)
+    if(image != images[-1]):
+        file.write("\n")
 file.close()
