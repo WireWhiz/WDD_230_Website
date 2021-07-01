@@ -1,7 +1,14 @@
 
-document.addEventListener("DOMContentLoaded", async function(e){
-    var images = (await fetch("images/gallery/img_list.txt")).text();
-    images = images.split("\n");
-
-    console.log(images);
+document.addEventListener("DOMContentLoaded", function(e){
+    var images = null;
+    var request = new XMLHttpRequest();
+    request.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+           images = xhttp.responseText.split("\n");
+           
+            console.log(images);
+        }
+    };
+    request.open("GET", "images/gallery/img_list.txt", true);
+    request.send();
 });
