@@ -11,9 +11,9 @@ document.addEventListener("DOMContentLoaded", function(e){
             var gallery = document.getElementsByClassName("gallery")[0];
             images.forEach(image => {
                 var imageElement = document.createElement("img");
-                imageElement.setAttribute("src", image);
+                imageElement.setAttribute("src", "images/gallery/" + image);
                 imageElement.setAttribute("class", "gallery_img");
-                gallery.appendChild(newImage);
+                gallery.appendChild(imageElement);
             });
             
         }
