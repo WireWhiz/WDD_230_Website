@@ -1,4 +1,7 @@
 
 document.addEventListener("DOMContentLoaded", async function(e){
-    console.log((await fetch("images/gallery/img_list.txt")).text());
+    var images = (await fetch("images/gallery/img_list.txt")).text();
+    images = images.split("\n");
+
+    console.log(images);
 });
