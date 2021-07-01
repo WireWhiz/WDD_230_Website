@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function(e){
     var request = new XMLHttpRequest();
     request.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-           images = xhttp.responseText.split("\n");
+           images = request.responseText.split("\n");
            
             console.log(images);
         }
