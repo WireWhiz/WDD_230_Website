@@ -106,7 +106,8 @@ body{
 }
 
 #footer{
-    position: absolute;
+    margin:0;
+    padding: 2px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -144,22 +145,35 @@ body{
     box-shadow: 0 0 50px #333;
 }
 
-@media only screen and (max-width: 1200px){
-    .gallery{
-        grid-template-columns: 1fr 1fr;
-    }
+input:invalid {
+	background-color: rgb(255, 82, 82);
 }
 
 @media only screen and (max-width: 820px){
+    .gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+    #content{
+        width: 90%;
+        padding: 5%;
+    }
+    header{
+        padding: 7px;
+        width:100%;
+    }
+    .navigation{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+@media only screen and (max-width: 480px){
     .gallery{
         grid-template-columns: 1fr;
     }
     header{
         padding: 7px;
-        width: 100%;
-    }
-    #content{
-        background-color: rgb(238, 249, 255);
         width: 100%;
     }
     .menu_button{

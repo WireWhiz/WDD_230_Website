@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <header>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta charset="utf-8">
+            <meta name="author" content="Elijah Knisley">
+            <meta name="description" content="This is a page for a web design class">
+            <title>SunIce Weather</title>
+            <link rel="stylesheet" href="weather.css">
+            <link rel="shortcut icon" href="images/logo.png">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <img id = "logo" src="images/logo.png">
+            <script type="text/javascript" src="js/banner.js"></script>
+            <script type="text/javascript" src="js/menu.js"></script>
+            <script type="text/javascript" src="js/footer.js"></script>
+            <script type="text/javascript" src="js/weather.js"></script>
+            <div id="header_text">
+                <h1>SunIce Weather</h1>
+                <p>Weather sun or ice, you know it</p>
+            </div>
+            <a href="#" class="menu_button" onclick="toggleMenu()">&#9776;</a>
+            
+        </header>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html"  class="underline">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+        <div class="banner hidden">
+            <p>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+        </div>
+        <div id="content">
+            <h1 class="title">Storm Center</h1>
+            <form action="stormcenter/thanks.html">
+                <fieldset>
+                    <label for="full name">Full Name: <br>
+                        <input type="text" id="name" name="name" pattern="(.{5,})" autocomplete="shipping postal-codep"></label><br>
+                    <label for="email">Email:<br>
+                        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="user@email.org"></label><br>
+                    <label for="phone">Phone:<br>
+                        <input type="tel" name="phone" placeholder="###-###-####"> </label><br>
+                    <label for="zip">Zip Code:<br>
+                        <input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep"></label><br>
+                    <label for="storm date:">Storm Date:<br>
+                        <input type="date" name="date"></label><br>
+                    <label for="storm type">Storm Type:
+                        <div class="selection">
+                            <label for="flash flood"><input type="checkbox" id="flood" name="stype" value="flood" checked> Flash Flood</label>
+                        </div>
+                        <div class="selection">
+                            <label for="hail"><input type="checkbox" id="hail" name="stype" value="hail"> Hail</label>
+                        </div>
+                        <div class="selection">
+                            <label for="hurricane"><input type="checkbox" id="hurricane" name="stype" value="hurricane"> Hurricane</label>
+                        </div>
+                        <div class="selection">
+                            <label for="thunderstorm"><input type="checkbox" id="thunderstorm" name="stype" value="thunderstorm"> Thunderstorm</label>
+                        </div>
+                        <div class="selection">
+                            <label for="tornado"><input type="checkbox" id="tornado" name="stype" value="tornado"> Tornado</label>
+                        </div>
+                    </label>
+                    <label for="storm severity">Storm Severity: &nbsp;&nbsp;&nbsp;<br>
+                        <script type="text/javascript">
+                            function adjustSeverity(rating) {
+                                document.getElementById("severityvalue").innerHTML = rating;
+                            }
+                        </script>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustSeverity(this.value)" onchange="adjustSeverity(this.value)">
+                        <span id="severityvalue">5</span>
+                    </label><br>
+                    <label for="region"> Region:<br>
+                        <select name="region" id="#select_region" onchange="selectRegion()">
+                            
+                            <option value="" disabled selected>Select Region ...</option>
+                            <option value="Preston">Preston</option>
+                            <option value="Soda Springs">Soda Springs</option>
+                            <option value="Fish Haven">Fish Haven</option>
+                        </select>
+                    </label><br>
+                    <label for="user in danger">User In Danger: <br>
+                        <div class="selection">
+                            <label><input type="radio" name="dlevel" value="yes"> Yes</label>
+                        </div>
+                        <div class="selection">
+                            <label><input type="radio" name="dlevel" value="maybe"> Maybe</label>
+                        </div>
+                        <div class="selection">
+                            <label><input type="radio" name="dlevel" value="no"> No</label>
+                        </div>
+                    </label><br>
+                    <lable for="additional comments"> Additional Comments: <br>
+                        <textarea name="additional" rows=4></textarea>
+                    </lable><br>
+
+                    <label for="submit button"><input type="submit"></label><br>
+                </fieldset>
+            </form>
+        </div>
+        <footer id="footer">
+            <p class="date_display"></p>
+        </footer>
+    </body>
+</html>
