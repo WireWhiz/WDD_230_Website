@@ -141,6 +141,33 @@ body{
 
 }
 
+#towns{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.town_data{
+    background-color: rgb(163, 174, 180);
+    padding: 7px;
+    margin: 7px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.town_image{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.town_header{
+    margin-bottom: 1px;
+}
+
+.town_phrase{
+    margin-top: 1px;
+    font-size: .9em;
+}
+
 .gallery_img:hover{
     box-shadow: 0 0 50px #333;
 }
@@ -165,6 +192,24 @@ input:invalid {
         width: 90%;
         padding-left: 5%;
         padding-right: 5%;
+    }
+    #towns{
+        grid-template-columns: 1fr 1fr;
+    }
+    .town_data{
+        display: flex;
+        grid-column: span 2;
+        padding: 10px;
+        justify-content: space-around;
+    }
+    .town_data:nth-child(odd){
+        flex-direction: row-reverse;
+    }
+    .town_text{
+        width: 40%;
+    }
+    .town_image{
+        width: 40%;
     }
 }
 

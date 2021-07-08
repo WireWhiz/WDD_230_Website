@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function(e){
             images.forEach(image => {
                 var imageElement = document.createElement("img");
                 imageElement.setAttribute("src", "images/gallery/" + image);
-                imageElement.setAttribute("loading", "lazy")
+                imageElement.setAttribute("loading", "lazy");
                 imageElement.setAttribute("class", "gallery_img");
                 gallery.appendChild(imageElement);
             });
