@@ -258,6 +258,15 @@ input:invalid {
     .featured_image_mobile{
         display: block;
     }
+    .town_data{
+        display: block;
+    }
+    .town_text{
+        width:100%;
+    }
+    .town_image{
+        width: 100%;
+    }
 }
 
 
