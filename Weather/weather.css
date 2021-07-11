@@ -97,7 +97,9 @@ body{
     display:flex;
     justify-content: space-around;
     background-color: rgb(137, 146, 151);
+    border-radius: 5px;
     padding: 5px;
+    text-align: center;
 }
 
 
