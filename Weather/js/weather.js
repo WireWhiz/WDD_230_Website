@@ -30,7 +30,7 @@ function windChill(temp, speed){
 
 document.addEventListener("DOMContentLoaded", function(e){
     
-    var request = new Request("http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=d3592c4f63c5f209b009aad5c509510e");
+    var request = new Request("https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=d3592c4f63c5f209b009aad5c509510e");
     
     fetch(request).then(function(response){
         return response.json();
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(e){
 
     });
 
-    request = new Request("http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=d3592c4f63c5f209b009aad5c509510e");
+    request = new Request("https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=d3592c4f63c5f209b009aad5c509510e");
     fetch(request).then(function(response){
         return response.json();
     }).then(function(jsonObject){
