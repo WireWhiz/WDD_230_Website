@@ -30,7 +30,14 @@ function windChill(temp, speed){
 
 document.addEventListener("DOMContentLoaded", function(e){
     
-    var request = new Request("https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=d3592c4f63c5f209b009aad5c509510e");
+    var cities = {
+        "preston" : "5604473",
+        "sodasprings" : "5607916",
+        "fishhaven" : "5585010"
+    };
+    var cityId = cities[document.getElementsByClassName("summary")[0].getAttribute("city")];
+
+    var request = new Request("https://api.openweathermap.org/data/2.5/weather?id=" + cityId + "&appid=d3592c4f63c5f209b009aad5c509510e");
     
     fetch(request).then(function(response){
         return response.json();
@@ -50,11 +57,9 @@ document.addEventListener("DOMContentLoaded", function(e){
         setHTMLContent("humidity", humidity + "%");
         setHTMLContent("wind_speed", wind_speed + " mph");
 
-        
-
     });
 
-    request = new Request("https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=d3592c4f63c5f209b009aad5c509510e");
+    request = new Request("https://api.openweathermap.org/data/2.5/forecast?id=" + cityId + "&appid=d3592c4f63c5f209b009aad5c509510e");
     fetch(request).then(function(response){
         return response.json();
     }).then(function(jsonObject){

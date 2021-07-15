@@ -102,6 +102,14 @@ body{
     text-align: center;
 }
 
+.events_list{
+    background-color: rgb(137, 146, 151);
+    border-radius: 5px;
+    padding: 10px;
+    list-style: none;
+    text-align: center;
+}
+
 
 .featured_article img{
     width: 100%;
@@ -250,6 +258,9 @@ input:invalid {
         border:none;
         position:static;
         opacity: 1;
+    }
+    .fdf_header{
+        display: none;
     }
     .fdf_icons{
         display: none;
