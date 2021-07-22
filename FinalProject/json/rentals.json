@@ -1,0 +1,82 @@
+{
+    "rentals" : [
+        {
+            "type" : "Honda Metro Scooter",
+            "max" : 1,
+            "reservation" : {
+                "half day" : 20,
+                "full day" : 30
+            },
+            "walk-in" : {
+                "half day" : 25,
+                "full day" : 35
+            }
+            
+        },
+        {
+            "type" : "Honda Dio Scooter",
+            "max" : 2,
+            "reservation" : {
+                "half day" : 30,
+                "full day" : 40
+            },
+            "walk-in" : {
+                "half day" : 35,
+                "full day" : 45
+            }
+            
+        },
+        {
+            "type" : "Honda PCX150 Scooter",
+            "max" : 2,
+            "reservation" : {
+                "half day" : 40,
+                "full day" : 50
+            },
+            "walk-in" : {
+                "half day" : 45,
+                "full day" : 55
+            }
+            
+        },
+        {
+            "type" : "Honda Pioneer ATV",
+            "max" : 4,
+            "reservation" : {
+                "half day" : 50,
+                "full day" : 70
+            },
+            "walk-in" : {
+                "half day" : 60,
+                "full day" : 80
+            }
+            
+        },
+        {
+            "type" : "Jeep Wrangler-4 door with a/c",
+            "max" : 5,
+            "reservation" : {
+                "half day" : 70,
+                "full day" : 100
+            },
+            "walk-in" : {
+                "half day" : 85,
+                "full day" : 125
+            }
+            
+        },
+        {
+            "type" : "Jeep Wrangler-2 door",
+            "max" : 4,
+            "reservation" : {
+                "half day" : 60,
+                "full day" : 85
+            },
+            "walk-in" : {
+                "half day" : 70,
+                "full day" : 90
+            }
+            
+        }
+    ]
+}

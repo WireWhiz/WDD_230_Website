@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <header>
+            <script type="text/javascript" src="js/template.js" ></script>
+            <div class="header_template" page_href="Reservations.html"></div>
+        </header>
+        <div class="content_template" page_name="Reservations">
+            <h2>Reservation Info:</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at time of rental.</li>
+                <li>No one under 12 years of age is allowed to ride on the scooters.</li>
+                <li>Fuel charge not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is free of charge.</li>
+                <li>Reservations rate requires 24 hour prior notification.</li>
+                <li>Free delivery to Cozumel hotel, Airbnb, or private residence for 2+ day rentals.</li>
+                <li>Payment via Google Pay, cash, credit card, debit card, or PayPal.</li>
+                <li>Rentals may be returned to either location.</li>
+            </ul>
+            <h2>Make a Reservation:</h2>
+            <form action="thanks.html">
+                <fieldset>
+                    <label for="full name">Full Name: <br>
+                        <input type="text" id="name" name="name" pattern="(.{5,})"  required></label><br>
+                    <label for="email">Email:<br>
+                        <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="user@email.org"></label><br>
+                    <label for="phone">Phone:<br>
+                        <input type="tel" name="phone" placeholder="###-###-####" required> </label><br>
+                    </lable><br>
+                    <label for="rental type">Rental Type:<br>
+                        <input type="text" id="name" name="type" placeholder="running our of time if I had more I would make a radio list that read off of the json file aaaaAAAAAA" required></label><br><br>
+                    <label for="time">Rental Time: <br>
+                        <div class="selection">
+                            <label><input type="radio" name="time" value="full-day"> full-day</label>
+                        </div>
+                        <div class="selection">
+                            <label><input type="radio" name="time" value="half-day"> half-day</label>
+                        </div>
+                    </label><br>
+
+                    <label for="submit button"><input type="submit"></label><br>
+                </fieldset>
+            </form>
+
+
+
+
+        </div>
+    </body>
+    
+</html>
